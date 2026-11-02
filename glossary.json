@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prefLabel": { "@id": "skos:prefLabel", "@language": "ru" },
+    "altLabel": { "@id": "skos:altLabel", "@language": "ru", "@container": "@set" },
+    "hiddenLabel": { "@id": "skos:hiddenLabel", "@language": "ru", "@container": "@set" },
+    "definition": { "@id": "skos:definition", "@language": "ru" },
+    "narrower": { "@id": "skos:narrower", "@container": "@set" },
+    "related": { "@id": "skos:related", "@container": "@set" },
+    "scopeNote": { "@id": "skos:scopeNote", "@language": "ru" }
+  },
+  "@id": "#digital-company-passport",
+  "@type": "skos:Concept",
+  "prefLabel": "Цифровой паспорт компании",
+  "altLabel": [
+    "Паспорт сущности",
+    "Цифровой паспорт сущности",
+    "Паспорт сущности компании",
+    "Карточка сущности",
+    "Цифровая сущность компании",
+    "Эталон данных компании",
+    "Источник правды о компании",
+    "Каноническая сущность бренда"
+  ],
+  "hiddenLabel": [
+    "Пасспорт сущности",
+    "Паспорт сущностей",
+    "Цифровой паспорт организации"
+  ],
+  "definition": "Открытая карточка организации по налоговому номеру со сверкой реквизитов по государственным реестрам, официальным сайтом, конкретными услугами и контактами для людей, поисковых систем и ИИ-ассистентов.",
+  "scopeNote": "Все термины из altLabel обозначают это же понятие. В текстах, брифах и договорах используется prefLabel.",
+  "narrower": [
+    {
+      "@id": "#entity-management",
+      "@type": "skos:Concept",
+      "prefLabel": "Ведение цифрового паспорта компании",
+      "altLabel": ["Управление цифровой сущностью компании", "Создание цифровой сущности"]
+    },
+    {
+      "@id": "#entity-graph",
+      "@type": "skos:Concept",
+      "prefLabel": "Связи цифрового паспорта компании",
+      "altLabel": ["Граф знаний о компании", "Граф доверия"]
+    },
+    {
+      "@id": "#entity-markup",
+      "@type": "skos:Concept",
+      "prefLabel": "Машиночитаемый формат цифрового паспорта компании",
+      "altLabel": ["Микроразметка Organization", "Структурированные данные о компании"]
+    }
+  ],
+  "related": [
+    {
+      "@id": "#digital-footprint",
+      "@type": "skos:Concept",
+      "prefLabel": "Цифровой след компании"
+    }
+  ]
+}
